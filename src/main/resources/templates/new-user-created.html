@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>GWI Account Details</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<style type="text/css">
+
+
+		.display-inline {
+			display: inline-flex;
+			width: 100%;
+			align-items: center;
+			background: #e7e7e7;
+   			 padding: 18px;
+		}
+
+		.header {
+			margin-left: 16px;
+			padding-top: 2px;
+		}
+
+		.heding_name {
+			color: #1f5a8d;
+			margin-bottom: 0;
+			font-weight: bolder;
+			font-size: 32px;
+		}
+
+		.heding_name_subname {
+			font-size: 18px;
+		}
+
+		.card {
+			padding: 14px;
+			border: none;
+		}
+
+		.upperCase {
+			text-transform: uppercase;
+		}
+
+		.loginCred {
+			background: #dbecfa;
+			padding: 9px 16px;
+			width: fit-content;
+			border: dashed 1px #1f5a8d;
+		}
+	</style>
+</head>
+
+<body>
+	<section>
+	
+		<div>
+			<div>
+				<div class="display-inline">
+					<img src="http://103.148.157.74:33078/finolane-services_dev/assets/img/GWI_LOGO.png" style="width: 80px;">
+					<div class="header">
+						<div class="heding_name">GWI</div>
+						<div class="heding_name_subname">Passion, Flexibility,Innovative</div>
+					</div>
+				</div>
+				<div class="card" style="margin-left: 15px;">
+					<div style="font-size: 20px"><span>Dear</span> <span class="upperCase">[[${name}]]</span></div>
+					<br>
+
+					<div style="font-size: 18px;">
+					<p>
+						<b>Congratulations</b>.<br>
+						We are pleased to inform you that youryour GWI Admin Panel account has been
+						activated with <b style="color: green;">[[${role}]] role.</b>.
+					</p>
+					<p>
+						Please use the information given below to login to your account..
+					</p>
+					<div class="loginCred">
+						<div>Login Id : [[${email}]]</div>
+						<div>Password : [[${password}]]</div>
+					</div>
+					<br>
+					<p>
+						Please use the GWI admin panel by following link.	</p> <br>
+					<div>
+						<a href="http://103.148.157.74:33078/finolane-services_dev/" target="_blank">
+							http://103.148.157.74:33078/finolane-services_dev/
+						</a>
+					</div>
+				
+				</div>
+				</div>
+			</div>
+		</div>
+
+		
+	</section>
+</body>
+</html>
